@@ -5,11 +5,13 @@ Please Fork this quiz into your own repository, upload your answers into your re
 # Installation
 -------------------------
 1 - Download & Install Node (Only using this for npm and running the program) https://nodejs.org/en/download/
+
 2 - Run "npm install" in the directory where you placed the code
 
 # Run
 -------------------------
 1 - Run "node app.js" in the directory where you placed the code
+
 2 - Navigate to http://localhost:3007/ in the browser of your choice
 
 # Expected Behavior
