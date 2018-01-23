@@ -1,0 +1,28 @@
+{
+	"groceries": [
+		{
+			"id": 0,
+			"name": "Milk",
+			"price": "3.25",
+			"expiration": "Wed Jan 16 2019"
+		},
+		{
+			"id": 1,
+			"name": "Bread",
+			"price": "1.50",
+			"expiration": "Sat Jan 19 2019"
+		},
+		{
+			"id": 2,
+			"name": "Eggs",
+			"price": "0.00",
+			"expiration": "Sat Jan 19 2019"
+		},
+		{
+			"id": 3,
+			"name": "Wine",
+			"price": "3.00",
+			"expiration": "Sun Feb 17 2019"
+		}
+	]
+}
