@@ -32,9 +32,14 @@ This very simple grocery list functions as follows...
 # Questions/Tasks
 ---------------------------
 1 - Add a new item to the grocery list .json, have it expire on 1/21/2019
+
 2 - There are a couple of pieces of the expected behavior that are not performing as described above. What are they?
+
 3 - Fix the issues you found in item 2.
+
 4 - The variable groceryCount is declared at the last line of app.get, why does it still work?
+
 5 - Add code that calculates a 9.75% sales tax on all groceries, and an 11% sales tax on alcohol (reflect this on the page somehow).
+
 
 Feel free to add styles to the CSS to make this look better!
