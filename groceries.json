@@ -23,6 +23,12 @@
 			"name": "Wine",
 			"price": "3.00",
 			"expiration": "Sun Feb 17 2019"
+		},
+		{
+			"id": 4,
+			"name": "Cookies",
+			"price": "19.95",
+			"expiration" : "Mon Jan 21 2019"
 		}
 	]
 }
