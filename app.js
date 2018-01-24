@@ -23,7 +23,12 @@ function readExpirationDates(groceries) {
 function formatGroceryText(name, price, expiration) {
 	var formattedName = name;
 	var formattedPrice = '';
+	/* A.
+	The next line originally read:
 	if (price === 0) {
+	Since we are comparing a string (from groceries.json) to a number, the strict equality (===) will always evaluate false. Using standard equality (==) gets what we want: a comparison of numerical values after the sting from groceries.json is converted to a number.
+	*/
+	if (price == 0) {
 		formattedPrice = 'FREE!';
 	} else {
 		formattedPrice = '$' + price;
@@ -38,7 +43,7 @@ function formatGroceryText(name, price, expiration) {
 
 function createGroceryHTML(groceries) {
 	var groceryHTML = '';
-	var loopCounter; 
+	var loopCounter;
 	for(loopCounter = 0; loopCounter < groceries.length; loopCounter++) {
 		var currentGrocery = groceries[loopCounter];
 		var groceryText = formatGroceryText(currentGrocery.name, currentGrocery.price, currentGrocery.expiration);
@@ -53,7 +58,7 @@ function calculateCosts(groceries) {
 		"total": 0,
 		"average": 0
 	}
-	var loopCounter; 
+	var loopCounter;
 	for(loopCounter = 0; loopCounter < groceries.length; loopCounter++) {
 		var currentGrocery = groceries[loopCounter];
 		costs.total = costs.total + parseFloat(currentGrocery.price, 10);
