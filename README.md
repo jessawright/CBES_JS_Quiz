@@ -53,7 +53,7 @@ Feel free to add styles to the CSS to make this look better!
 
 2 - Expected behavior that isn't happening:
  - A. Items that cost nothing (Eggs) don't display as "FREE!"
- - Dates are not displayed as MM-DD-YYYY (single digit months do not get a leading zero).
+ - B. Dates are not displayed as MM-DD-YYYY (single digit months do not get a leading zero).
  - The average cost of the items in the grocery list is not displayed.
  - I ... don't know what exception logging is. I don't know if that is happening, yet.
 
