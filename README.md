@@ -53,9 +53,11 @@ Feel free to add styles to the CSS to make this look better!
 
 2 - Expected behavior that isn't happening:
  - A. Items that cost nothing (Eggs) don't display as "FREE!"
- - B. Dates are not displayed as MM-DD-YYYY (single digit months do not get a leading zero).
+ - B. Dates are not displayed as MM-DD-YYYY (single digit months fail to get a leading zero).
  - C. The average cost of the items in the grocery list is not displayed.
 
-3 - Issue fixes are noted in the code with comments. I tried to make them easy to read.
+3 - Issue fixes are noted in the code with comments. I tried to make them easy to read. A. starts at line 27, B starts at line 45, and C starts at line 135.
 
-4 - The variable groceryCount still works, despite being declared in the last line of app.get because it is hoisted. When Javascript compiles, function and variable declarations go to the top (are hoisted to the top) of their respective scopes, and things proceed chronologically from there. It makes no functional difference where groceryCount is declared as long as it is in the the same scope. 
+4 - The variable groceryCount still works, despite being declared in the last line of app.get because it is hoisted. When Javascript compiles, function and variable declarations go to the top (are hoisted to the top) of their respective scopes, and things proceed chronologically from there. It makes no functional difference where groceryCount is declared as long as it is in the the same scope.
+
+5 - Code added. The code addition starts at line 74 and the display addition starts at line 133.
