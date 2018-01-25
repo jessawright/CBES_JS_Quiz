@@ -61,3 +61,11 @@ Feel free to add styles to the CSS to make this look better!
 4 - The variable groceryCount still works, despite being declared in the last line of app.get because it is hoisted. When Javascript compiles, function and variable declarations go to the top (are hoisted to the top) of their respective scopes, and things proceed chronologically from there. It makes no functional difference where groceryCount is declared as long as it is in the the same scope.
 
 5 - Code added. The code addition starts at line 74 and the display addition starts at line 133.
+
+CSS - Since CSS and HTML are so intertwined, I started by retagging some of the HTML to make it more semantic and accessible (ex. `<div id="welcome">Welcome</div>` became an h1). I also got rid of some `<br>` since they appeared intended to add whitespace to the display, which is better done with CSS. I started in on the CSS by deleting what wasn't being used, which was a lot of it. 
+
+
+# TODO
+ ---------------------------
+ - Double check that the line references in README are still correct before I send the link.
+ - Edit some of the header info before I send the link.

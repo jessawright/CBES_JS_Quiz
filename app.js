@@ -66,7 +66,7 @@ function createGroceryHTML(groceries) {
 	for(loopCounter = 0; loopCounter < groceries.length; loopCounter++) {
 		var currentGrocery = groceries[loopCounter];
 		var groceryText = formatGroceryText(currentGrocery.name, currentGrocery.price, currentGrocery.expiration);
-		groceryHTML += (`<div id="grocery-list">${groceryText}</div>`);
+		groceryHTML += (`<p id="grocery-list">${groceryText}</p>`);
 	}
 
 	return groceryHTML;
@@ -105,11 +105,10 @@ app.get('/', function (req, res) {
 			groceryCount = groceries.length;
 			var html = ('<link rel="stylesheet" type="text/css" href="css/site.css">');
 			html += ('<link rel="stylesheet" type="text/css" href="css/pikaday.css">');
-			html += ('<div id="welcome">Welcome</div>');
-			html += ('<div id="grocery-list">Grocery List</div><br>');
-			html += listOfGroceries;
-			html += (`<br>
-				  <input type="text" id="datepicker">`);
+			html += ('<h1 id="welcome">Welcome</h1>');
+			html += ('<h2 id="grocery-list">Grocery List</h2>');
+			html += (`<div>${listOfGroceries}</div>`);
+			html += (`<input type="text" id="datepicker">`);
 
 			html += (`<script src="pikaday/pikaday.js"></script>
 						    <script>
@@ -128,12 +127,12 @@ app.get('/', function (req, res) {
 
 						    </script>`);
 
-			html += (`<div>Total Number of Groceries on List is ${groceryCount}</div>`);
-			html += (`<div>Total Cost of Groceries on List is $${groceryCosts.total.toFixed(2)}</div>`);
+			html += (`<p>Total Number of Groceries on List is ${groceryCount}</p>`);
+			html += (`<p>Total Cost of Groceries on List is $${groceryCosts.total.toFixed(2)}</p>`);
 			/* Added line to display the total tax on the groceries on the list */
-			html += (`<div>Total Tax on Groceries on List is $${groceryCosts.tax.toFixed(2)}</div>`)
+			html += (`<p>Total Tax on Groceries on List is $${groceryCosts.tax.toFixed(2)}</p>`)
 			//html += (`<div>Average Cost of Groceries on List is $${groceryCosts.average.value.toString().toFixed(2)}</div>`);
-			html += (`<div>Average (pre-tax) Cost of Groceries on List is $${groceryCosts.average.toFixed(2)}</div>`);
+			html += (`<p>Average (pre-tax) Cost of Groceries on List is $${groceryCosts.average.toFixed(2)}</p>`);
 				/*
 					C.
 					I changed the line above, removing "value.toString()." I'm not sure
