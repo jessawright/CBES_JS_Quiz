@@ -62,7 +62,17 @@ Feel free to add styles to the CSS to make this look better!
 
 5 - Code added. The code addition starts at line 74 and the display addition starts at line 133.
 
-CSS - Since CSS and HTML are so intertwined, I started by retagging some of the HTML to make it more semantic and accessible (ex. `<div id="welcome">Welcome</div>` became an h1). I also got rid of some `<br>` since they appeared intended to add whitespace to the display, which is better done with CSS. I started in on the CSS by deleting what wasn't being used, which was a lot of it. 
+CSS - I was conflicted about how to handle this, so I made two branches.
+  - Master Branch - I handled this conservatively here, with styling that only required minimal tweaks to the HTML.
+    - Retagged some of the HTML to make it more semantic and accessible (ex. `<div id="welcome">Welcome</div>` became an h1).
+    - Got rid of some `<br>` since they appeared intended to add whitespace to the display, which is better done with CSS (maybe I am wrong about that?).
+    - Deleted unused CSS in site.css. (I left pikaday.css alone.)
+    - Adjusted some of the spacing and typography to give it better visual hierarchy.
+  - Fun Branch - I had fun, I tinkered with the HTML as much as I wanted, edited wording, and generally played around.
+    
+
+
+
 
 
 # TODO
